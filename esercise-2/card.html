@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card </title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            width: 240px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(205, 42, 42, 0.87);
+        }
+        
+        .avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: block;
+            background: #e0e0e0;
+        }
+        
+        .name {
+            font-size: 18px;
+            margin: 0 0 8px 0;
+            color: #333;
+        }
+        
+        .bio {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0 0 20px 0;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 8px;
+        }
+        
+        button {
+            flex: 1;
+            padding: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            background: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: #4a6cf7;
+            color: white;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background: #3b5be0;
+        }
+        
+        .btn-secondary:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar"></div>
+        <h2 class="name">Luca Bianchi</h2>
+        <p class="bio">Designer e sviluppatore .</p>
+        <div class="buttons">
+            <button class="btn-primary">Segui</button>
+            <button class="btn-secondary">Contatta</button>
+        </div>
+    </div>
+</body>
+</html>
